@@ -15,7 +15,7 @@ servers:
     description: Development server
 tags:
   - name: Projects
-    description: project operations
+    description: Modules operations
 security: 
   - jwt: []
 paths:
