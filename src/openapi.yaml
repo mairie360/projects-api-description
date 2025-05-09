@@ -1,0 +1,34 @@
+openapi: 3.1.1
+info:
+  version: 1.0.0
+  title: The Core API description
+  description: The Core API description of the Mairie360 Core API
+  contact:
+    name: Clément Antoine XAVIER
+    url: https://github.com/marie360/core-api-description
+    email: clement-antoine.xavier@epitech.eu
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+servers:
+  - url: http://api.development.mairie360.fr
+    description: Development server
+tags:
+  - name: Projects
+    description: project operations
+security: 
+  - jwt: []
+paths:
+  /projects:
+    $ref: ./resources/projects.yaml
+  /projects/{project_id}:
+    $ref: ./resources/project.yaml
+components:
+  parameters:
+    $ref: ./parameters/_index.yaml
+  schemas:
+    $ref: ./schemas/_index.yaml
+  responses:
+    $ref: ./responses/_index.yaml
+  securitySchemes:
+    $ref: ./security_schemes/_index.yaml

@@ -1,0 +1,7 @@
+name: project_id
+in: path
+required: true
+description: The project ID
+schema:
+  type: integer
+  format: int32

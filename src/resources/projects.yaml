@@ -1,0 +1,65 @@
+get:
+  summary: List all projects
+  operationId: list_projects
+  description: List all projects
+  tags:
+    - Projects
+  security:
+    - jwt: []
+  parameters:
+    - $ref: ../parameters/query/limit.yaml
+    - $ref: ../parameters/query/offset.yaml
+  responses:
+    200:
+      description: project list retrieved successfully
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../schemas/project.yaml
+    400:
+      $ref: ../responses/bad_request.yaml
+    401:
+      $ref: ../responses/unauthorized.yaml
+    403:
+      $ref: ../responses/forbidden.yaml
+    500:
+      $ref: ../responses/internal_server_error.yaml
+
+post:
+  summary: Create a new project
+  operationId: create_project
+  description: Create an project
+  tags:
+    - Projects
+  security:
+    - jwt: []
+  requestBody:
+    description: project object that needs to be added
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../schemas/create_project.yaml
+  responses:
+    201:
+      description: project created successfully
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/project.yaml
+    400:
+      $ref: ../responses/bad_request.yaml
+    401:
+      $ref: ../responses/unauthorized.yaml
+    403:
+      $ref: ../responses/forbidden.yaml
+    404:
+      $ref: ../responses/not_found.yaml
+    409:
+      $ref: ../responses/conflict.yaml
+    422:
+      $ref: ../responses/unprocessable_entity.yaml
+    500:
+      $ref: ../responses/internal_server_error.yaml

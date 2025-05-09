@@ -1,0 +1,8 @@
+create_project:
+  $ref: create_project.yaml
+error:
+  $ref: error.yaml
+project:
+  $ref: project.yaml
+update_project:
+  $ref: update_project.yaml
