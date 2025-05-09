@@ -11,7 +11,7 @@ info:
     name: MIT License
     url: https://opensource.org/licenses/MIT
 servers:
-  - url: http://api.development.mairie360.fr
+  - url: http://projects.api.development.mairie360.fr
     description: Development server
 tags:
   - name: Projects
