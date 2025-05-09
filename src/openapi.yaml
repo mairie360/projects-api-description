@@ -1,11 +1,11 @@
 openapi: 3.1.1
 info:
   version: 1.0.0
-  title: The Core API description
-  description: The Core API description of the Mairie360 Core API
+  title: The Projects API description
+  description: The Projects API description of the Mairie360 Projects API
   contact:
     name: Clément Antoine XAVIER
-    url: https://github.com/marie360/core-api-description
+    url: https://github.com/marie360/projects-api-description
     email: clement-antoine.xavier@epitech.eu
   license:
     name: MIT License

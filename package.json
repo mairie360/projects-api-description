@@ -1,7 +1,7 @@
 {
-  "name": "project-api-description",
+  "name": "projects-api-description",
   "version": "1.0.0",
-  "description": "The Project API description",
+  "description": "The Projects API description",
   "main": "index.js",
   "scripts": {
     "build": "redocly bundle src/openapi.yaml --output build/openapi.yaml",
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mairie360/project-api-description.git"
+    "url": "git+https://github.com/mairie360/projects-api-description.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mairie360/project-api-description/issues"
+    "url": "https://github.com/mairie360/projects-api-description/issues"
   },
-  "homepage": "https://github.com/mairie360/project-api-description#readme",
+  "homepage": "https://github.com/mairie360/projects-api-description#readme",
   "dependencies": {
     "@redocly/cli": "~1.34.2"
   },

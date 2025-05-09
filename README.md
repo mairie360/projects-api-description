@@ -1,12 +1,12 @@
-# Project API Description
+# Projects API Description
 
-This repository contains the OpenAPI documentation for the Project API of Mairie360.
+This repository contains the OpenAPI documentation for the Projects API of Mairie360.
 
 It uses [Redocly CLI](https://redocly.com/docs/cli/) to bundle, preview, and build the API documentation.
 
 ## View the API Documentation
 
-Go to the [Project API Description](https://mairie360.github.io/project-api-description) to view the live API documentation.
+Go to the [Projects API Description](https://mairie360.github.io/projects-api-description) to view the live API documentation.
 
 ## Requirements
 
@@ -18,8 +18,8 @@ Go to the [Project API Description](https://mairie360.github.io/project-api-desc
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/mairie360/project-api-description.git
-cd project-api-description
+git clone https://github.com/mairie360/projects-api-description.git
+cd projects-api-description
 npm install
 ```
 
